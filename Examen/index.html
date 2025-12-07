@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Lego Studio: Modo Realista</title>
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+    <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+    <script src="https://cdn.babylonjs.com/babylon.sound.js"></script> 
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="renderCanvas"></canvas>
+    
+    <div id="crosshair">+</div>
+
+    <div id="toolbar">
+        <div class="color-slot active" style="background: #e74c3c;" onclick="selectColor(0)">1</div>
+        <div class="color-slot" style="background: #3498db;" onclick="selectColor(1)">2</div>
+        <div class="color-slot" style="background: #2ecc71;" onclick="selectColor(2)">3</div>
+        <div class="color-slot" style="background: #f1c40f;" onclick="selectColor(3)">4</div>
+        <div class="color-slot" style="background: #9b59b6;" onclick="selectColor(4)">5</div>
+        <div class="color-slot" style="background: #ffffff;" onclick="selectColor(5)">6</div>
+        <div class="color-slot" style="background: #34495e;" onclick="selectColor(6)">7</div>
+        <div class="info-text">CLICK IZQ: Poner | CLICK DER: Borrar</div>
+    </div>
+
+    <div id="controls-hint">
+        [W,A,S,D] Caminar | [ESPACIO] Saltar | [SHIFT] Correr
+    </div>
+
+    <script src="game.js" defer></script>
+</body>
+</html>
