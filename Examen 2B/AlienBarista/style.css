@@ -1,0 +1,16 @@
+/* Asegura que el juego ocupe toda la pantalla */
+html, body {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #050505; /* Negro profundo para el espacio */
+}
+
+#renderCanvas {
+    width: 100%;
+    height: 100%;
+    touch-action: none; /* Vital para que Babylon maneje el mouse/touch */
+    outline: none;
+}
